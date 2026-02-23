@@ -4,25 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Self-Assessment Quiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-  <h1>Miss Know It All</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="confessions.html">Confessions</a>
-    <a href="articles.html">Articles</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="resources.html">Get Help</a>
-  </nav>
+<h1>Miss Know It All</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="confessions.html">Confessions</a>
+  <a href="articles.html">Articles</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="resources.html">Get Help</a>
+</nav>
 </header>
 
 <section class="quiz">
 <h2>Self-Assessment Quiz</h2>
 <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
 <form id="quizForm">
-  <div class="question-step">
+  <div class="question-step" style="background:#ffe0f0;">
     <label>1. How often do you feel stressed?</label>
     <select name="q1" required>
       <option value="">Select</option>
@@ -31,7 +32,7 @@
       <option value="2">Often</option>
     </select>
   </div>
-  <div class="question-step">
+  <div class="question-step" style="background:#e0f7ff;">
     <label>2. Do you sleep well at night?</label>
     <select name="q2" required>
       <option value="">Select</option>
@@ -43,6 +44,7 @@
   <button type="submit">Get Results</button>
 </form>
 <div id="quizResult"></div>
+<div id="quizTips"></div>
 </section>
 
 <script src="js/script.js"></script>
